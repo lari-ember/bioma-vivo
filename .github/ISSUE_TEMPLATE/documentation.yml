@@ -10,7 +10,6 @@ body:
     id: doc-section
     attributes:
       label: Qual parte da documentação?
-      placeholder: Exemplo: "Instalação no Linux"
     validations:
       required: true
   - type: textarea
