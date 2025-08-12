@@ -1,0 +1,32 @@
+name: Solicitação de Funcionalidade
+description: Sugira uma nova funcionalidade ou melhoria
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sua ideia! Vamos entender melhor o que você está propondo.
+  - type: input
+    id: title
+    attributes:
+      label: Título curto
+      placeholder: Exemplo: "Adicionar sistema de login com Google"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição detalhada
+      description: Explique o que deseja que seja implementado
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefícios
+      description: Como isso ajuda usuários ou o projeto?
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Outras formas que poderiam resolver o problema
