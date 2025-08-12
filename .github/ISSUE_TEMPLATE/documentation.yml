@@ -1,0 +1,22 @@
+name: Melhoria de Documentação
+description: Sugerir ajustes ou adições à documentação
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ajude-nos a melhorar a documentação!
+  - type: input
+    id: doc-section
+    attributes:
+      label: Qual parte da documentação?
+      placeholder: Exemplo: "Instalação no Linux"
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Sugestão
+      placeholder: Explique o que deve ser melhorado ou adicionado
+    validations:
+      required: true
