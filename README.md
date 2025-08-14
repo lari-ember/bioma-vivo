@@ -5,6 +5,10 @@ Wallpaper animado e interativo para Linux (Pop!_OS), simulando um ecossistema di
 ## 🎯 Objetivo
 Criar um "bioma vivo" com animais e elementos ambientais, usando HTML5 Canvas, otimização de CPU/GPU e suporte para interações via mouse/teclado.
 
+## 📌 Fluxo de Trabalho
+
+Para entender como trabalhamos no desenvolvimento do **Bioma Vivo**, veja o guia completo no arquivo [WORKFLOW.md](WORKFLOW.md).
+
 ## 🗂 Estrutura Inicial
 - `src/` — Código-fonte do projeto
 - `assets/` — Imagens, sons e texturas
