@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioma Vivo - Lagarto de 8 Patas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            transition: background 1s ease;
+        }
+        
+        canvas {
+            display: block;
+            cursor: none;
+        }
+        
+        .info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 100;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 100;
+        }
+        
+        button {
+            margin: 2px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        
+        /* Day/Night themes */
+        .day {
+            background: linear-gradient(to bottom, #87CEEB 0%, #98FB98 100%);
+        }
+        
+        .night {
+            background: linear-gradient(to bottom, #191970 0%, #000080 100%);
+        }
+    </style>
+</head>
+<body class="day">
+    <div class="info">
+        <strong>Bioma Vivo v0.1.0-alpha</strong><br>
+        Clique: Mudar cor do lagarto<br>
+        Espaço: Dia/Noite<br>
+        P: Pausar/Continuar
+    </div>
+    
+    <div class="controls">
+        <button onclick="lizard.changeColor()">🎨 Cor</button>
+        <button onclick="toggleDayNight()">🌅 Dia/Noite</button>
+        <button onclick="togglePause()">⏸️ Pausar</button>
+        <button onclick="showInfo()">ℹ️ Info</button>
+    </div>
+
+    <canvas id="biomaCanvas"></canvas>
+
+    <script src="lizard.js"></script>
+    <script src="environment.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
